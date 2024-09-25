@@ -1,32 +1,35 @@
 #### MC Question:
-What is the air speed of an unladen swallow?
-Options:
-A) 2 mph
-B) 20 mph
-C) 200 mph
-D) African or European?
+What is the right order for an if statement?
 
-Answer: D
+Options:
+A) if (boolean) {code}
+B) if {code} (boolean)
+C) if {boolean} (code)
+D) if 
+
+Answer: A
 
 ---
 #### MC Question:
-Who you gonna call?
+What are the parameters for line()?
 
 Options:
-A) Transformers
-B) Ghostbusters
-C) Thundercats
-D) Teenage Mutant Ninja Turtles
+A) line(y, x, y1, x1)
+B) line(y, x, length)
+C) line(x1, y1, x2, y2)
+D) line(x, y, length)
 
-Answer: B
+Answer: C
 
 ---
 #### Programming question:
-Write a function that draws a circle in the middle of the screen. The size and color should be parameters.
+Write a function that draws a square cut in half by a line. The parameters should be the size and color. 
 Possible solution:
 ```
-void drawCircle(int s, color c) {
+void drawRect(int s, color c, color c1) {
   fill(c);
-  circle(width/2, height/2, s);
+  rect(1, 1, s, s);
+  stroke(c1);
+  line(1, s / 2, 1 + s, s / 2);
 }
-```
+
